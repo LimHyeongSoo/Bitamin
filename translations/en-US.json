@@ -1,0 +1,74 @@
+{
+    "components": {
+        "atoms": {
+            "buttons": {
+                "userButton": {
+                    "menu": {
+                        "settings": "Settings",
+                        "logout": "Logout"
+                    }
+                }
+            }
+        },
+        "molecules": {
+            "tasklist": {
+                "TaskList": {
+                    "title": "📄 Hate Speech Task List",
+                    "loading": "Loading...",
+                    "error": "An error occurred during the task."
+                }
+            },
+            "attachments": {
+                "cancelUpload": "Cancel Upload",
+                "removeAttachment": "Remove Attachment"
+            },
+            "settingsModal": {
+                "settings": "Settings",
+                "expandMessages": "Expand Messages"
+            }
+        },
+        "organisms": {
+            "hateSpeech": {
+                "header": {
+                    "title": "Hate Speech Detection System"
+                },
+                "inputBox": {
+                    "input": {
+                        "placeholder": "Enter a sentence to check for hate speech."
+                    },
+                    "SubmitButton": {
+                        "sendMessage": "Analyze"
+                    }
+                },
+                "analysisResults": {
+                    "title": "Analysis Results",
+                    "hateSpeechDetected": "Hate speech detected.",
+                    "noHateSpeech": "No hate speech detected."
+                },
+                "uploadSection": {
+                    "title": "File Upload",
+                    "instruction": "Upload a file to check for hate speech.",
+                    "processing": "Processing file...",
+                    "done": "File processing complete.",
+                    "error": "An error occurred while processing the file."
+                }
+            }
+        }
+    },
+    "pages": {
+        "header": {
+            "task": "Hate Speech Detection Task"
+        }
+    },
+    "messages": {
+        "upload": "Upload a file to check for hate speech.",
+        "processing": "Processing the uploaded file...",
+        "done": "File processing complete!",
+        "error": "An error occurred while processing the file."
+    },
+    "hooks": {
+        "useLLMProviders": {
+            "failedToFetchProviders": "Failed to fetch providers."
+        }
+    }
+}

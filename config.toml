@@ -1,0 +1,47 @@
+[project]
+enable_telemetry = true
+user_env = []
+session_timeout = 3600
+cache = false
+allow_origins = [ "*",]
+
+[features]
+prompt_playground = true
+unsafe_allow_html = false
+latex = false
+auto_tag_thread = true
+
+[UI]
+name = "Bitamin"
+show_readme_as_default = true
+default_collapse_content = true
+default_expand_messages = false
+hide_cot = false
+custom_css = "public/test.css"
+
+[meta]
+generated_by = "1.1.202"
+language = "ko"
+
+[features.spontaneous_file_upload]
+enabled = true
+accept = [ "*/*",]
+max_files = 20
+max_size_mb = 500
+
+[features.audio]
+min_decibels = -45
+initial_silence_timeout = 3000
+silence_timeout = 1500
+max_duration = 15000
+chunk_duration = 1000
+sample_rate = 44100
+
+[UI.theme.light]
+background = "#FFFFFF"
+paper = "#FFFFFF"
+
+[UI.theme.light.primary]
+main = "#007ACC"
+dark = "#87CEFA"
+light = "#ADD8E6"
